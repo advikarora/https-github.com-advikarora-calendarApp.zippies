@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B55E4FE92BACFF6F00042913 /* zippiesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E4FE82BACFF6F00042913 /* zippiesAppApp.swift */; };
+		B55E4FEB2BACFF6F00042913 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E4FEA2BACFF6F00042913 /* ContentView.swift */; };
+		B55E4FED2BACFF6F00042913 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E4FEC2BACFF6F00042913 /* Item.swift */; };
+		B55E4FEF2BACFF7000042913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55E4FEE2BACFF7000042913 /* Assets.xcassets */; };
+		B55E4FF22BACFF7000042913 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55E4FF12BACFF7000042913 /* Preview Assets.xcassets */; };
+		B55E4FFC2BACFF7000042913 /* zippiesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E4FFB2BACFF7000042913 /* zippiesAppTests.swift */; };
+		B55E50062BACFF7000042913 /* zippiesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E50052BACFF7000042913 /* zippiesAppUITests.swift */; };
+		B55E50082BACFF7000042913 /* zippiesAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E50072BACFF7000042913 /* zippiesAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B55E4FF82BACFF7000042913 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B55E4FDD2BACFF6F00042913 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B55E4FE42BACFF6F00042913;
+			remoteInfo = zippiesApp;
+		};
+		B55E50022BACFF7000042913 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B55E4FDD2BACFF6F00042913 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B55E4FE42BACFF6F00042913;
+			remoteInfo = zippiesApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B55E4FE52BACFF6F00042913 /* zippiesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zippiesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55E4FE82BACFF6F00042913 /* zippiesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zippiesAppApp.swift; sourceTree = "<group>"; };
+		B55E4FEA2BACFF6F00042913 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B55E4FEC2BACFF6F00042913 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B55E4FEE2BACFF7000042913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B55E4FF12BACFF7000042913 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B55E4FF72BACFF7000042913 /* zippiesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zippiesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55E4FFB2BACFF7000042913 /* zippiesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zippiesAppTests.swift; sourceTree = "<group>"; };
+		B55E50012BACFF7000042913 /* zippiesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zippiesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55E50052BACFF7000042913 /* zippiesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zippiesAppUITests.swift; sourceTree = "<group>"; };
+		B55E50072BACFF7000042913 /* zippiesAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zippiesAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B55E4FE22BACFF6F00042913 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55E4FF42BACFF7000042913 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55E4FFE2BACFF7000042913 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B55E4FDC2BACFF6F00042913 = {
+			isa = PBXGroup;
+			children = (
+				B55E4FE72BACFF6F00042913 /* zippiesApp */,
+				B55E4FFA2BACFF7000042913 /* zippiesAppTests */,
+				B55E50042BACFF7000042913 /* zippiesAppUITests */,
+				B55E4FE62BACFF6F00042913 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B55E4FE62BACFF6F00042913 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B55E4FE52BACFF6F00042913 /* zippiesApp.app */,
+				B55E4FF72BACFF7000042913 /* zippiesAppTests.xctest */,
+				B55E50012BACFF7000042913 /* zippiesAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B55E4FE72BACFF6F00042913 /* zippiesApp */ = {
+			isa = PBXGroup;
+			children = (
+				B55E4FE82BACFF6F00042913 /* zippiesAppApp.swift */,
+				B55E4FEA2BACFF6F00042913 /* ContentView.swift */,
+				B55E4FEC2BACFF6F00042913 /* Item.swift */,
+				B55E4FEE2BACFF7000042913 /* Assets.xcassets */,
+				B55E4FF02BACFF7000042913 /* Preview Content */,
+			);
+			path = zippiesApp;
+			sourceTree = "<group>";
+		};
+		B55E4FF02BACFF7000042913 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B55E4FF12BACFF7000042913 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B55E4FFA2BACFF7000042913 /* zippiesAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B55E4FFB2BACFF7000042913 /* zippiesAppTests.swift */,
+			);
+			path = zippiesAppTests;
+			sourceTree = "<group>";
+		};
+		B55E50042BACFF7000042913 /* zippiesAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B55E50052BACFF7000042913 /* zippiesAppUITests.swift */,
+				B55E50072BACFF7000042913 /* zippiesAppUITestsLaunchTests.swift */,
+			);
+			path = zippiesAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B55E4FE42BACFF6F00042913 /* zippiesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B55E500B2BACFF7000042913 /* Build configuration list for PBXNativeTarget "zippiesApp" */;
+			buildPhases = (
+				B55E4FE12BACFF6F00042913 /* Sources */,
+				B55E4FE22BACFF6F00042913 /* Frameworks */,
+				B55E4FE32BACFF6F00042913 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zippiesApp;
+			productName = zippiesApp;
+			productReference = B55E4FE52BACFF6F00042913 /* zippiesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B55E4FF62BACFF7000042913 /* zippiesAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B55E500E2BACFF7000042913 /* Build configuration list for PBXNativeTarget "zippiesAppTests" */;
+			buildPhases = (
+				B55E4FF32BACFF7000042913 /* Sources */,
+				B55E4FF42BACFF7000042913 /* Frameworks */,
+				B55E4FF52BACFF7000042913 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B55E4FF92BACFF7000042913 /* PBXTargetDependency */,
+			);
+			name = zippiesAppTests;
+			productName = zippiesAppTests;
+			productReference = B55E4FF72BACFF7000042913 /* zippiesAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B55E50002BACFF7000042913 /* zippiesAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B55E50112BACFF7000042913 /* Build configuration list for PBXNativeTarget "zippiesAppUITests" */;
+			buildPhases = (
+				B55E4FFD2BACFF7000042913 /* Sources */,
+				B55E4FFE2BACFF7000042913 /* Frameworks */,
+				B55E4FFF2BACFF7000042913 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B55E50032BACFF7000042913 /* PBXTargetDependency */,
+			);
+			name = zippiesAppUITests;
+			productName = zippiesAppUITests;
+			productReference = B55E50012BACFF7000042913 /* zippiesAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B55E4FDD2BACFF6F00042913 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					B55E4FE42BACFF6F00042913 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					B55E4FF62BACFF7000042913 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B55E4FE42BACFF6F00042913;
+					};
+					B55E50002BACFF7000042913 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B55E4FE42BACFF6F00042913;
+					};
+				};
+			};
+			buildConfigurationList = B55E4FE02BACFF6F00042913 /* Build configuration list for PBXProject "zippiesApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B55E4FDC2BACFF6F00042913;
+			productRefGroup = B55E4FE62BACFF6F00042913 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B55E4FE42BACFF6F00042913 /* zippiesApp */,
+				B55E4FF62BACFF7000042913 /* zippiesAppTests */,
+				B55E50002BACFF7000042913 /* zippiesAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B55E4FE32BACFF6F00042913 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55E4FF22BACFF7000042913 /* Preview Assets.xcassets in Resources */,
+				B55E4FEF2BACFF7000042913 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55E4FF52BACFF7000042913 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55E4FFF2BACFF7000042913 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B55E4FE12BACFF6F00042913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55E4FEB2BACFF6F00042913 /* ContentView.swift in Sources */,
+				B55E4FED2BACFF6F00042913 /* Item.swift in Sources */,
+				B55E4FE92BACFF6F00042913 /* zippiesAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55E4FF32BACFF7000042913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55E4FFC2BACFF7000042913 /* zippiesAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B55E4FFD2BACFF7000042913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55E50062BACFF7000042913 /* zippiesAppUITests.swift in Sources */,
+				B55E50082BACFF7000042913 /* zippiesAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B55E4FF92BACFF7000042913 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B55E4FE42BACFF6F00042913 /* zippiesApp */;
+			targetProxy = B55E4FF82BACFF7000042913 /* PBXContainerItemProxy */;
+		};
+		B55E50032BACFF7000042913 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B55E4FE42BACFF6F00042913 /* zippiesApp */;
+			targetProxy = B55E50022BACFF7000042913 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B55E50092BACFF7000042913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B55E500A2BACFF7000042913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B55E500C2BACFF7000042913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"zippiesApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TechX.zippiesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B55E500D2BACFF7000042913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"zippiesApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TechX.zippiesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B55E500F2BACFF7000042913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TechX.zippiesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zippiesApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/zippiesApp";
+			};
+			name = Debug;
+		};
+		B55E50102BACFF7000042913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TechX.zippiesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zippiesApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/zippiesApp";
+			};
+			name = Release;
+		};
+		B55E50122BACFF7000042913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TechX.zippiesAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = zippiesApp;
+			};
+			name = Debug;
+		};
+		B55E50132BACFF7000042913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TechX.zippiesAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = zippiesApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B55E4FE02BACFF6F00042913 /* Build configuration list for PBXProject "zippiesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B55E50092BACFF7000042913 /* Debug */,
+				B55E500A2BACFF7000042913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B55E500B2BACFF7000042913 /* Build configuration list for PBXNativeTarget "zippiesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B55E500C2BACFF7000042913 /* Debug */,
+				B55E500D2BACFF7000042913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B55E500E2BACFF7000042913 /* Build configuration list for PBXNativeTarget "zippiesAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B55E500F2BACFF7000042913 /* Debug */,
+				B55E50102BACFF7000042913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B55E50112BACFF7000042913 /* Build configuration list for PBXNativeTarget "zippiesAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B55E50122BACFF7000042913 /* Debug */,
+				B55E50132BACFF7000042913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B55E4FDD2BACFF6F00042913 /* Project object */;
+}
