@@ -15,6 +15,7 @@
 		B55E4FFC2BACFF7000042913 /* zippiesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E4FFB2BACFF7000042913 /* zippiesAppTests.swift */; };
 		B55E50062BACFF7000042913 /* zippiesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E50052BACFF7000042913 /* zippiesAppUITests.swift */; };
 		B55E50082BACFF7000042913 /* zippiesAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55E50072BACFF7000042913 /* zippiesAppUITestsLaunchTests.swift */; };
+		B571703A2BBB71B30027CC2B /* NotesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57170392BBB71B30027CC2B /* NotesPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B55E50012BACFF7000042913 /* zippiesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zippiesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55E50052BACFF7000042913 /* zippiesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zippiesAppUITests.swift; sourceTree = "<group>"; };
 		B55E50072BACFF7000042913 /* zippiesAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zippiesAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B57170392BBB71B30027CC2B /* NotesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				B55E4FE82BACFF6F00042913 /* zippiesAppApp.swift */,
 				B55E4FEA2BACFF6F00042913 /* ContentView.swift */,
+				B57170392BBB71B30027CC2B /* NotesPage.swift */,
 				B55E4FEC2BACFF6F00042913 /* Item.swift */,
 				B55E4FEE2BACFF7000042913 /* Assets.xcassets */,
 				B55E4FF02BACFF7000042913 /* Preview Content */,
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B571703A2BBB71B30027CC2B /* NotesPage.swift in Sources */,
 				B55E4FEB2BACFF6F00042913 /* ContentView.swift in Sources */,
 				B55E4FED2BACFF6F00042913 /* Item.swift in Sources */,
 				B55E4FE92BACFF6F00042913 /* zippiesAppApp.swift in Sources */,
