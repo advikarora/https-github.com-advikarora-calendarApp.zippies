@@ -1,18 +1,25 @@
-//
-//  NotesPage.swift
-//  calendarApp
-//
-//  Created by Advik Arora on 4/2/24.
-//
-
 import SwiftUI
 
 struct NotesPage: View {
+    @State private var noteText: String = ""
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                TextEditor(text: $noteText)
+                    .padding()
+                    .border(Color.gray, width: 1)
+                NavigationLink(destination: ContentView()) {
+                    Text("Go to Content View")
+                }
+            }
+            .navigationTitle("Notes")
+        }
     }
 }
 
-#Preview {
-    NotesPage()
+struct NotesPage_Preview: PreviewProvider {
+    static var previews: some View {
+        NotesPage()
+    }
 }
