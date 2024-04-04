@@ -24,13 +24,6 @@ import SwiftUI
         }
     }
 
-    struct NotesPage: View {
-        var body: some View {
-            Text("This is the Notes Page")
-                .navigationTitle("Notes")
-        }
-    }
-
     struct NavBar_Preview: PreviewProvider {
         static var previews: some View {
             NavBar()
