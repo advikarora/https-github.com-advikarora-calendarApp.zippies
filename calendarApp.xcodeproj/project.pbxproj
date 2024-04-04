@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845141482BBF6366002A813A /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845141472BBF6366002A813A /* NavBar.swift */; };
 		B5068EEC2BACE8EC00B4EC60 /* calendarAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5068EEB2BACE8EC00B4EC60 /* calendarAppApp.swift */; };
 		B5068EEE2BACE8EC00B4EC60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5068EED2BACE8EC00B4EC60 /* ContentView.swift */; };
 		B5068EF02BACE8EC00B4EC60 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5068EEF2BACE8EC00B4EC60 /* Item.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		845141472BBF6366002A813A /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 		B5068EE82BACE8EC00B4EC60 /* calendarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calendarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5068EEB2BACE8EC00B4EC60 /* calendarAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarAppApp.swift; sourceTree = "<group>"; };
 		B5068EED2BACE8EC00B4EC60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		845141442BBF6308002A813A /* Navigation Bar */ = {
+			isa = PBXGroup;
+			children = (
+				845141472BBF6366002A813A /* NavBar.swift */,
+			);
+			path = "Navigation Bar";
+			sourceTree = "<group>";
+		};
 		B5068EDF2BACE8EC00B4EC60 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +108,7 @@
 		B5068EEA2BACE8EC00B4EC60 /* calendarApp */ = {
 			isa = PBXGroup;
 			children = (
+				845141442BBF6308002A813A /* Navigation Bar */,
 				B5068EEB2BACE8EC00B4EC60 /* calendarAppApp.swift */,
 				B5068EED2BACE8EC00B4EC60 /* ContentView.swift */,
 				B5068EEF2BACE8EC00B4EC60 /* Item.swift */,
@@ -263,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845141482BBF6366002A813A /* NavBar.swift in Sources */,
 				B5F21A9C2BBC6A08003D3109 /* NotesPage.swift in Sources */,
 				B5068EEE2BACE8EC00B4EC60 /* ContentView.swift in Sources */,
 				B5068EF02BACE8EC00B4EC60 /* Item.swift in Sources */,
