@@ -18,6 +18,7 @@
 		B50CE09C2BCDC8D200CF57B8 /* CalendarGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50CE09B2BCDC8D200CF57B8 /* CalendarGrid.swift */; };
 		B50CE09E2BCDC8E800CF57B8 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50CE09D2BCDC8E800CF57B8 /* DateExtensions.swift */; };
 		B50CE0A02BCDCCF800CF57B8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50CE09F2BCDCCF800CF57B8 /* Item.swift */; };
+		B50CE0A22BCF6DB000CF57B8 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50CE0A12BCF6DB000CF57B8 /* HomePage.swift */; };
 		B57CECA42BBF57C6001FE04A /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57CECA32BBF57C6001FE04A /* NoteDetailView.swift */; };
 		B5F21A9C2BBC6A08003D3109 /* NotesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F21A9B2BBC6A08003D3109 /* NotesPage.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		B50CE09B2BCDC8D200CF57B8 /* CalendarGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarGrid.swift; sourceTree = "<group>"; };
 		B50CE09D2BCDC8E800CF57B8 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		B50CE09F2BCDCCF800CF57B8 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B50CE0A12BCF6DB000CF57B8 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		B57CECA32BBF57C6001FE04A /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 		B5F21A9B2BBC6A08003D3109 /* NotesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				B5068EEB2BACE8EC00B4EC60 /* calendarAppApp.swift */,
+				B50CE0A12BCF6DB000CF57B8 /* HomePage.swift */,
 				B5068EED2BACE8EC00B4EC60 /* ContentView.swift */,
 				B50CE09F2BCDCCF800CF57B8 /* Item.swift */,
 				B5F21A9B2BBC6A08003D3109 /* NotesPage.swift */,
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5F21A9C2BBC6A08003D3109 /* NotesPage.swift in Sources */,
+				B50CE0A22BCF6DB000CF57B8 /* HomePage.swift in Sources */,
 				B57CECA42BBF57C6001FE04A /* NoteDetailView.swift in Sources */,
 				B50CE09A2BCDC8C200CF57B8 /* CalendarView.swift in Sources */,
 				B50CE09C2BCDC8D200CF57B8 /* CalendarGrid.swift in Sources */,
