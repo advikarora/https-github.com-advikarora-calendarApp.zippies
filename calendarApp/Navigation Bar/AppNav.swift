@@ -24,7 +24,7 @@ struct CustomTabBar: View {
             .tint(Color("blue"))
             
             Button {
-                // Home
+                // New Event
             } label: {
                 VStack (alignment: .center, spacing: 4) {
                     Image(systemName: "plus.circle.fill")
