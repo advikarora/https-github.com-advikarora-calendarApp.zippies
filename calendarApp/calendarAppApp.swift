@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftData
 
 @main
+
 struct calendarAppApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([

@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
+    @State var selectedTab: Tabs = .notes
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
 
@@ -37,6 +38,7 @@ struct ContentView: View {
         } detail: {
             Text("Select an item")
         }
+        CustomTabBar(selectedTab: $selectedTab)
     }
 
     private func addItem() {

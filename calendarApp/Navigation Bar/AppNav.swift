@@ -7,21 +7,25 @@
 
 import SwiftUI
 
+enum Tabs: Int {
+    case calendar = 0
+    case notes = 1
+}
+
 struct CustomTabBar: View {
+    
+    @Binding var selectedTab: Tabs
+    
     var body: some View {
         HStack {
             Button{
                 //Switch to Calendar
+                selectedTab = .calendar
+                
             } label: {
-                VStack (alignment: .center, spacing: 4){
-                    Image(systemName: "calendar")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 32, height: 32)
-                    Text("Calendar")
-                }
+                TabBarButton(buttonText: "Calendar", imageName: "calendar", isActive: selectedTab == .calendar)
             }
-            .tint(Color("blue"))
+            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
             
             Button {
                 // Home
@@ -35,22 +39,23 @@ struct CustomTabBar: View {
                     Text("New Event")
                 }
             }
-            .tint(Color("dark blue"))
+            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
             
             Button{
                 //Switch to Notes
+                selectedTab = .notes
             } label: {
-                VStack (alignment: .center, spacing: 4){
-                    Image(systemName: "note.text")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 24, height: 24)
-                    Text("Notes")
-                }
+                TabBarButton(buttonText: "Notes", imageName: "note.text", isActive: selectedTab == .notes)
             }
-            .tint(Color("blue"))
+            .foregroundColor(.blue)
             
         }
         .frame(height: 82)
+    }
+}
+
+struct CustomTabBar_Previews: PreviewProvider {
+    static var previews: some View {
+        CustomTabBar(selectedTab: .constant(.calendar))
     }
 }

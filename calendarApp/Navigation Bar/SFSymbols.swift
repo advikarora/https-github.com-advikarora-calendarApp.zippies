@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct SFSymbols {
+    static let close: String = "xmark"
+}
