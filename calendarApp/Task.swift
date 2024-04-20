@@ -5,4 +5,9 @@
 //  Created by Krisha Avula on 4/20/24.
 //
 
-import Foundation
+import SwiftUI
+
+struct Task {
+    var day: Int
+    var taskDescription: String
+}

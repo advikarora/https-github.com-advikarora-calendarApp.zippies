@@ -22,6 +22,7 @@
 		B50CE0A22BCF6DB000CF57B8 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50CE0A12BCF6DB000CF57B8 /* HomePage.swift */; };
 		B57CECA42BBF57C6001FE04A /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57CECA32BBF57C6001FE04A /* NoteDetailView.swift */; };
 		B5F21A9C2BBC6A08003D3109 /* NotesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F21A9B2BBC6A08003D3109 /* NotesPage.swift */; };
+		F5F434242BD471E200BEF212 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F434232BD471E200BEF212 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		B50CE0A12BCF6DB000CF57B8 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		B57CECA32BBF57C6001FE04A /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 		B5F21A9B2BBC6A08003D3109 /* NotesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesPage.swift; sourceTree = "<group>"; };
+		F5F434232BD471E200BEF212 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				B57CECA32BBF57C6001FE04A /* NoteDetailView.swift */,
 				B50CE0992BCDC8C200CF57B8 /* CalendarView.swift */,
 				B50CE09B2BCDC8D200CF57B8 /* CalendarGrid.swift */,
+				F5F434232BD471E200BEF212 /* Task.swift */,
 				B50CE09D2BCDC8E800CF57B8 /* DateExtensions.swift */,
 				B5068EF12BACE8EE00B4EC60 /* Assets.xcassets */,
 				B5068EF32BACE8EE00B4EC60 /* Preview Content */,
@@ -293,6 +296,7 @@
 				B5F21A9C2BBC6A08003D3109 /* NotesPage.swift in Sources */,
 				B50CE0A22BCF6DB000CF57B8 /* HomePage.swift in Sources */,
 				B57CECA42BBF57C6001FE04A /* NoteDetailView.swift in Sources */,
+				F5F434242BD471E200BEF212 /* Task.swift in Sources */,
 				B50CE09A2BCDC8C200CF57B8 /* CalendarView.swift in Sources */,
 				B50CE09C2BCDC8D200CF57B8 /* CalendarGrid.swift in Sources */,
 				B50CE0A02BCDCCF800CF57B8 /* Item.swift in Sources */,

@@ -31,7 +31,7 @@ struct CalendarView: View {
                 }
             }
             .padding()
-
+            
             CalendarGrid(currentMonth: $currentMonth)
         }
     }
