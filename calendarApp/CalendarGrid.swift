@@ -4,7 +4,6 @@ import SwiftUI
 struct CalendarGrid: View {
     @Binding var currentMonth: Date
     
-    // Store the number of days in the month and the start day index
     @State private var daysInMonth: Int = 0
     @State private var firstDayOfMonth: Date = Date()
     @State private var isShowingTaskPopup = false
@@ -16,7 +15,6 @@ struct CalendarGrid: View {
         ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
     }
     
-    // Update the state when currentMonth changes
     private func updateMonthData() {
         do {
             let metadata = try currentMonth.monthMetadata()

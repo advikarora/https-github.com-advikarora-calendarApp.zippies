@@ -11,6 +11,7 @@
 		84C257042BD4A52500814067 /* AppNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C257032BD4A52500814067 /* AppNav.swift */; };
 		84C257072BD4A58B00814067 /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C257062BD4A58B00814067 /* SFSymbols.swift */; };
 		84C257092BD4A5B400814067 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C257082BD4A5B400814067 /* TabBarButton.swift */; };
+		B505B4DE2BD598D700D56E4E /* NoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B505B4DD2BD598D700D56E4E /* NoteManager.swift */; };
 		B5068EEC2BACE8EC00B4EC60 /* calendarAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5068EEB2BACE8EC00B4EC60 /* calendarAppApp.swift */; };
 		B5068EEE2BACE8EC00B4EC60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5068EED2BACE8EC00B4EC60 /* ContentView.swift */; };
 		B5068EF22BACE8EE00B4EC60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5068EF12BACE8EE00B4EC60 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		84C257032BD4A52500814067 /* AppNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNav.swift; sourceTree = "<group>"; };
 		84C257062BD4A58B00814067 /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
 		84C257082BD4A5B400814067 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
+		B505B4DD2BD598D700D56E4E /* NoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoteManager.swift; path = ../NoteManager.swift; sourceTree = "<group>"; };
 		B5068EE82BACE8EC00B4EC60 /* calendarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calendarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5068EEB2BACE8EC00B4EC60 /* calendarAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarAppApp.swift; sourceTree = "<group>"; };
 		B5068EED2BACE8EC00B4EC60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				B5068EEB2BACE8EC00B4EC60 /* calendarAppApp.swift */,
 				B50CE0A12BCF6DB000CF57B8 /* HomePage.swift */,
 				B5068EED2BACE8EC00B4EC60 /* ContentView.swift */,
+				B505B4DD2BD598D700D56E4E /* NoteManager.swift */,
 				B50CE09F2BCDCCF800CF57B8 /* Item.swift */,
 				B5F21A9B2BBC6A08003D3109 /* NotesPage.swift */,
 				B57CECA32BBF57C6001FE04A /* NoteDetailView.swift */,
@@ -309,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B505B4DE2BD598D700D56E4E /* NoteManager.swift in Sources */,
 				845141482BBF6366002A813A /* NavBar.swift in Sources */,
 				B5F21A9C2BBC6A08003D3109 /* NotesPage.swift in Sources */,
 				B50CE0A22BCF6DB000CF57B8 /* HomePage.swift in Sources */,
