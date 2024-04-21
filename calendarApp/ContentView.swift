@@ -11,6 +11,7 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
+    @State var selectedTab: Tabs = .notes
 
     var body: some View {
         NavigationSplitView {
@@ -37,6 +38,7 @@ struct ContentView: View {
         } detail: {
             Text("Select an item")
         }
+        CustomTabBar(selectedTab: $selectedTab)
     }
 
     private func addItem() {
