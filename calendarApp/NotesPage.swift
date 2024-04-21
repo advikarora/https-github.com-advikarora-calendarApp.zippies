@@ -3,6 +3,8 @@ import SwiftUI
 struct NotesPage: View {
     @State private var noteText: String = ""
     @State private var notes: [String] = []
+    @State var selectedTab: Tabs = .notes
+
 
     var body: some View {
         NavigationView {
