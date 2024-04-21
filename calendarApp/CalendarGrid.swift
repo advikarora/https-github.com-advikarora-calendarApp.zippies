@@ -71,7 +71,6 @@ struct CalendarGrid: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding()
                     Button("Add Task") {
-                        // Create and save the task for the selected day
                         let newTask = Task(day: selectedDay, taskDescription: taskDescription)
                         tasks.append(selectedDay)
                         // Add code here to save the task to your data model or perform any other necessary action
@@ -85,9 +84,8 @@ struct CalendarGrid: View {
         }
     }
     
-    struct CalendarGrid_Previews: PreviewProvider {
-        static var previews: some View {
-            CalendarGrid(currentMonth: .constant(Date()))
-        }
+struct CalendarGrid_Previews: PreviewProvider {
+    static var previews: some View {
+        CalendarGrid(currentMonth: .constant(Date()))
     }
 }
