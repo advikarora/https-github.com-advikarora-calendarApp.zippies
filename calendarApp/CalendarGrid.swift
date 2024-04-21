@@ -73,19 +73,23 @@ struct CalendarGrid: View {
                     Button("Add Task") {
                         let newTask = Task(day: selectedDay, taskDescription: taskDescription)
                         tasks.append(selectedDay)
-                        // Add code here to save the task to your data model or perform any other necessary action
                         // After adding the task, dismiss the pop-up
                         isShowingTaskPopup = false
                     }
                     .padding()
                 }
                 .padding()
-            })
+                    .onAppear {
+                        // Reset taskDescription when the popup appears
+                        taskDescription = ""
+                    }
+                })
         }
     }
     
-struct CalendarGrid_Previews: PreviewProvider {
-    static var previews: some View {
-        CalendarGrid(currentMonth: .constant(Date()))
+    struct CalendarGrid_Previews: PreviewProvider {
+        static var previews: some View {
+            CalendarGrid(currentMonth: .constant(Date()))
+        }
     }
 }
