@@ -106,7 +106,6 @@
 		84C257052BD4A55B00814067 /* App Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				84C257032BD4A52500814067 /* AppNav.swift */,
 				84C257062BD4A58B00814067 /* SFSymbols.swift */,
 				84C257082BD4A5B400814067 /* TabBarButton.swift */,
 			);
@@ -139,6 +138,7 @@
 				84C257052BD4A55B00814067 /* App Navigation */,
 				845141442BBF6308002A813A /* Navigation Bar */,
 				B5068EEB2BACE8EC00B4EC60 /* calendarAppApp.swift */,
+				84C257032BD4A52500814067 /* AppNav.swift */,
 				B50CE0A12BCF6DB000CF57B8 /* HomePage.swift */,
 				B5068EED2BACE8EC00B4EC60 /* ContentView.swift */,
 				B50CE09F2BCDCCF800CF57B8 /* Item.swift */,
