@@ -19,6 +19,11 @@ struct CustomTabBar: View {
         NavigationView {
             VStack {
                 Spacer() // Pushes navigation links to the bottom
+                Image("logo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 500, height: 500)
+                Spacer()
                 
                 HStack {
                     NavigationLink(destination: CalendarView()) {
