@@ -2,10 +2,8 @@ import SwiftUI
 
 struct NotesPage: View {
     @State private var noteText: String = ""
-    @State private var notes: [String] = []
-    @State var selectedTab: Tabs = .notes
-
-
+    @EnvironmentObject var noteManager: NoteManager // Use EnvironmentObject here
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -14,7 +12,10 @@ struct NotesPage: View {
                     .padding()
                     .border(Color.gray, width: 1)
                 
-                Button(action: takeNote) {
+                Button(action: {
+                    noteManager.addNote(noteText)
+                    noteText = ""
+                }) {
                     Text("Save Note")
                         .padding()
                         .background(Color.blue)
@@ -24,33 +25,22 @@ struct NotesPage: View {
                 .padding(.top, 20)
                 
                 List {
-                    ForEach(notes.indices, id: \.self) { index in
-                        NavigationLink(destination: NoteDetailView(noteText: $notes[index])) {
-                            Text(notes[index])
+                    ForEach(noteManager.notes.indices, id: \.self) { index in
+                        NavigationLink(destination: NoteDetailView(noteText: $noteManager.notes[index])) {
+                            Text(noteManager.notes[index])
                         }
                     }
-                    .onDelete(perform: deleteNote)
+                    .onDelete(perform: noteManager.removeNotes)
                 }
             }
             .navigationTitle("Notes")
             .padding(.horizontal)
         }
     }
-    
-    func takeNote() {
-        if !noteText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-            notes.append(noteText)
-            noteText = ""
-        }
-    }
-    
-    func deleteNote(at offsets: IndexSet) {
-        notes.remove(atOffsets: offsets)
-    }
 }
 
 struct NotesPage_Preview: PreviewProvider {
     static var previews: some View {
-        NotesPage()
+        NotesPage().environmentObject(NoteManager())
     }
 }

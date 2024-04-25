@@ -13,43 +13,44 @@ enum Tabs: Int {
 }
 
 struct CustomTabBar: View {
-    
     @Binding var selectedTab: Tabs
     
     var body: some View {
         NavigationView {
-            HStack {
-                NavigationLink(destination: CalendarView()) {
-                    TabBarButton(buttonText: "Calendar", imageName: "calendar", isActive: selectedTab == .calendar)
-                }
-                .foregroundColor(.blue)
+            VStack {
+                Spacer() // Pushes navigation links to the bottom
                 
-                Button(action: {
-                    // Home
-                }, label: {
-                    VStack (alignment: .center, spacing: 4) {
-                        Image(systemName: "plus.circle.fill")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 32, height: 32)
-                        
-                        Text("New Event")
+                HStack {
+                    NavigationLink(destination: CalendarView()) {
+                        TabBarButton(buttonText: "Calendar", imageName: "calendar", isActive: selectedTab == .calendar)
                     }
-                })
-                .foregroundColor(.blue)
-                
-                NavigationLink(destination: NotesPage()) {
-                    TabBarButton(buttonText: "Notes", imageName: "note.text", isActive: selectedTab == .notes)
+                    .foregroundColor(.blue)
+                    
+                    NavigationLink(destination: HomePage()) {
+                        VStack (alignment: .center, spacing: 4) {
+                            Image(systemName: "plus.circle.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 32, height: 32)
+                            
+                            Text("New Event")
+                        }
+                    }
+                    .foregroundColor(.blue)
+                    
+                    NavigationLink(destination: NotesPage()) {
+                        TabBarButton(buttonText: "Notes", imageName: "note.text", isActive: selectedTab == .notes)
+                    }
+                    .foregroundColor(.blue)
                 }
-                .foregroundColor(.blue)
+                .frame(height: 82)
             }
-            .frame(height: 82)
         }
     }
 }
-
 struct CustomTabBar_Previews: PreviewProvider {
     static var previews: some View {
         CustomTabBar(selectedTab: .constant(.calendar))
+            .environmentObject(NoteManager())
     }
 }

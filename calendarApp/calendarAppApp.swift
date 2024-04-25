@@ -1,15 +1,10 @@
-//
-//  calendarAppApp.swift
-//  calendarApp
-//
-//  Created by Advik Arora on 3/21/24.
-//
-
 import SwiftUI
 import SwiftData
 
 @main
-struct calendarAppApp: App {
+struct CalendarAppApp: App {
+    var noteManager = NoteManager()
+
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -25,8 +20,9 @@ struct calendarAppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomePage()
+                .environmentObject(noteManager)
+                .modelContainer(sharedModelContainer) 
         }
-        .modelContainer(sharedModelContainer)
     }
 }
