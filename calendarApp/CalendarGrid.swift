@@ -3,6 +3,8 @@ import SwiftUI
 
 struct CalendarGrid: View {
     @Binding var currentMonth: Date
+    @ObservedObject var taskManager = TaskManager()
+    
     
     @State private var daysInMonth: Int = 0
     @State private var firstDayOfMonth: Date = Date()
@@ -37,7 +39,7 @@ struct CalendarGrid: View {
             }
             LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 7), spacing: 10) {
                 ForEach(0..<daysInMonth, id: \.self) { day in
-                    let hasTask = tasks.contains(day + 1)
+                    let description = taskManager.getDescription(forDay: day + 1)
                     Button(action: {
                         selectedDay = day + 1
                         isShowingTaskPopup = true
@@ -47,7 +49,7 @@ struct CalendarGrid: View {
                                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                                 .background(Color.blue.opacity(0.2))
                                 .cornerRadius(5)
-                            if hasTask {
+                            if description != nil {
                                 Circle()
                                     .foregroundColor(.red)
                                     .frame(width: 8, height: 8)
@@ -70,6 +72,7 @@ struct CalendarGrid: View {
                         .padding()
                     Button("Add Task") {
                         let newTask = Task(day: selectedDay, taskDescription: taskDescription)
+                        taskManager.addTask(newTask)
                         tasks.append(selectedDay)
                         // After adding the task, dismiss the pop-up
                         isShowingTaskPopup = false
@@ -82,6 +85,11 @@ struct CalendarGrid: View {
                         taskDescription = ""
                     }
                 })
+                
+                // Display tasks
+                List(taskManager.tasks) { task in
+                Text("\(task.day): \(task.taskDescription)")
+                }
         }
     }
     
