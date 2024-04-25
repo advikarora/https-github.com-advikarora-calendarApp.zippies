@@ -87,9 +87,20 @@ struct CalendarGrid: View {
                 })
                 
                 // Display tasks
-                List(taskManager.tasks) { task in
-                Text("\(task.day): \(task.taskDescription)")
+            List {
+                ForEach(taskManager.tasks) { task in
+                    HStack {
+                        Text("\(task.day): \(task.taskDescription)")
+                        Spacer()
+                        Button(action: {
+                            taskManager.removeTask(task)
+                        }) {
+                            Image(systemName: "trash")
+                                .foregroundColor(.red)
+                        }
+                    }
                 }
+            }
         }
     }
     

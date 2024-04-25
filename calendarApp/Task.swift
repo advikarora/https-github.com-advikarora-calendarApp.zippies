@@ -30,6 +30,12 @@ class TaskManager: ObservableObject {
         tasks.append(task)
     }
     
+    func removeTask(_ task: Task) {
+        if let index = tasks.firstIndex(where: { $0.id == task.id }) {
+            tasks.remove(at: index)
+        }
+    }
+    
     func getDescription(forDay day: Int) -> String? {
         return tasks.first(where: { $0.day == day })?.taskDescription
     }
