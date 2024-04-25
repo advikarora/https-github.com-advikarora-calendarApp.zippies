@@ -25,6 +25,7 @@
 		B50CE0A02BCDCCF800CF57B8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50CE09F2BCDCCF800CF57B8 /* Item.swift */; };
 		B50CE0A22BCF6DB000CF57B8 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50CE0A12BCF6DB000CF57B8 /* HomePage.swift */; };
 		B57CECA42BBF57C6001FE04A /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57CECA32BBF57C6001FE04A /* NoteDetailView.swift */; };
+		B5CD06DA2BDADF13003DE33F /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD06D92BDADF13003DE33F /* GradientBackground.swift */; };
 		B5F21A9C2BBC6A08003D3109 /* NotesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F21A9B2BBC6A08003D3109 /* NotesPage.swift */; };
 		F5F434242BD471E200BEF212 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F434232BD471E200BEF212 /* Task.swift */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		B50CE09F2BCDCCF800CF57B8 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		B50CE0A12BCF6DB000CF57B8 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		B57CECA32BBF57C6001FE04A /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
+		B5CD06D92BDADF13003DE33F /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		B5F21A9B2BBC6A08003D3109 /* NotesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesPage.swift; sourceTree = "<group>"; };
 		F5F434232BD471E200BEF212 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +145,7 @@
 				B5068EEB2BACE8EC00B4EC60 /* calendarAppApp.swift */,
 				B50CE0A12BCF6DB000CF57B8 /* HomePage.swift */,
 				B505B4DD2BD598D700D56E4E /* NoteManager.swift */,
+				B5CD06D92BDADF13003DE33F /* GradientBackground.swift */,
 				B5068EED2BACE8EC00B4EC60 /* ContentView.swift */,
 				B50CE09F2BCDCCF800CF57B8 /* Item.swift */,
 				B5F21A9B2BBC6A08003D3109 /* NotesPage.swift */,
@@ -313,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B505B4E02BD59AC800D56E4E /* NoteManager.swift in Sources */,
+				B5CD06DA2BDADF13003DE33F /* GradientBackground.swift in Sources */,
 				845141482BBF6366002A813A /* NavBar.swift in Sources */,
 				B5F21A9C2BBC6A08003D3109 /* NotesPage.swift in Sources */,
 				B50CE0A22BCF6DB000CF57B8 /* HomePage.swift in Sources */,

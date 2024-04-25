@@ -18,7 +18,7 @@ struct CustomTabBar: View {
     var body: some View {
         NavigationView {
             VStack {
-                Spacer() // Pushes navigation links to the bottom
+                Spacer() 
                 Image("logo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -31,17 +31,6 @@ struct CustomTabBar: View {
                     }
                     .foregroundColor(.blue)
                     
-                    NavigationLink(destination: HomePage()) {
-                        VStack (alignment: .center, spacing: 4) {
-                            Image(systemName: "plus.circle.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 32, height: 32)
-                            
-                            Text("New Event")
-                        }
-                    }
-                    .foregroundColor(.blue)
                     
                     NavigationLink(destination: NotesPage()) {
                         TabBarButton(buttonText: "Notes", imageName: "note.text", isActive: selectedTab == .notes)

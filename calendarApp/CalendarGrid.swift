@@ -9,7 +9,7 @@ struct CalendarGrid: View {
     @State private var daysInMonth: Int = 0
     @State private var firstDayOfMonth: Date = Date()
     @State private var isShowingTaskPopup = false
-    @State private var selectedDay = 0
+    @State private var selectedDay = 1
     @State private var taskDescription = ""
     @State private var tasks: [Int] = []
     
@@ -41,8 +41,10 @@ struct CalendarGrid: View {
                 ForEach(0..<daysInMonth, id: \.self) { day in
                     let description = taskManager.getDescription(forDay: day + 1)
                     Button(action: {
-                        selectedDay = day + 1
-                        isShowingTaskPopup = true
+                        DispatchQueue.main.async {
+                            selectedDay = day + 1
+                            isShowingTaskPopup = true
+                        }
                     }) {
                         VStack {
                             Text("\(day + 1)")
@@ -74,19 +76,17 @@ struct CalendarGrid: View {
                         let newTask = Task(day: selectedDay, taskDescription: taskDescription)
                         taskManager.addTask(newTask)
                         tasks.append(selectedDay)
-                        // After adding the task, dismiss the pop-up
                         isShowingTaskPopup = false
                     }
                     .padding()
                 }
                 .padding()
-                    .onAppear {
-                        // Reset taskDescription when the popup appears
-                        taskDescription = ""
-                    }
+                .onAppear {
+                    self.selectedDay = selectedDay
+                    taskDescription = ""
+                }
                 })
                 
-                // Display tasks
             List {
                 ForEach(taskManager.tasks) { task in
                     HStack {

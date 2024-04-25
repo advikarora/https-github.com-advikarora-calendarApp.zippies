@@ -1,18 +1,9 @@
-//
-//  GradientBackground.swift
-//  calendarApp
-//
-//  Created by Advik Arora on 4/25/24.
-//
-
 import SwiftUI
 
 struct GradientBackground: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        LinearGradient(gradient: Gradient(colors: [Color.blue, Color.white, Color.green.opacity(0.4)]),
+                       startPoint: .top, endPoint: .bottom)
+            .edgesIgnoringSafeArea(.all)
     }
-}
-
-#Preview {
-    GradientBackground()
 }

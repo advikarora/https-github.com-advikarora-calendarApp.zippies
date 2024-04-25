@@ -2,7 +2,7 @@ import SwiftUI
 
 struct NotesPage: View {
     @State private var noteText: String = ""
-    @EnvironmentObject var noteManager: NoteManager // Use EnvironmentObject here
+    @EnvironmentObject var noteManager: NoteManager 
     
     var body: some View {
         NavigationView {
