@@ -7,20 +7,32 @@
 
 import SwiftUI
 
-struct Task: Codable {
-    let id = UUID()
+struct Task: Codable, Identifiable {
+    let id: UUID
     var day: Int
     var taskDescription: String
+    
+    init(day: Int, taskDescription: String) {
+        self.id = UUID()
+        self.day = day
+        self.taskDescription = taskDescription
+    }
 }
 
 class TaskManager: ObservableObject {
-    @Published var tasks: [Int: String] = [:] // Dictionary to store tasks (day: description)
+    static let shared = TaskManager()
     
-    func addTask(day: Int, description: String) {
-        tasks[day] = description
+    @Published var tasks: [Task] = []
+    
+    internal init() {}
+    
+    func addTask(_ task: Task) {
+        tasks.append(task)
     }
     
     func getDescription(forDay day: Int) -> String? {
-        return tasks[day]
+        return tasks.first(where: { $0.day == day })?.taskDescription
     }
 }
+
+

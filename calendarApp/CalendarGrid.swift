@@ -73,7 +73,8 @@ struct CalendarGrid: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding()
                     Button("Add Task") {
-                        taskManager.addTask(day: selectedDay, description: taskDescription)
+                        let newTask = Task(day: selectedDay, taskDescription: taskDescription)
+                        taskManager.addTask(newTask)
                         tasks.append(selectedDay)
                         // After adding the task, dismiss the pop-up
                         isShowingTaskPopup = false
@@ -86,6 +87,11 @@ struct CalendarGrid: View {
                         taskDescription = ""
                     }
                 })
+                
+                // Display tasks
+                List(taskManager.tasks) { task in
+                Text("\(task.day): \(task.taskDescription)")
+                }
         }
     }
     
